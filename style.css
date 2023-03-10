@@ -1,0 +1,87 @@
+/* display: flex đã giúp cho các thành phần được hiển thị linh hoạt hơn. */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 50px;
+    height: 70px;
+    align-items: center;
+}
+
+.logo{
+    flex: 1;
+}
+
+.menu{
+    flex: 3;
+    display: flex;
+}
+.menu > li{
+    padding:  0 12px;
+    position: relative;
+}
+.menu >li:hover .sub-menu{
+    visibility: visible;
+    top: 30px;
+}
+.menu > li a{
+    font-size: 12px;
+    font-weight: bold !important;
+    display: block;
+    line-height: 20px;
+}
+
+
+.sub-menu{
+    position: absolute;
+    width: 150px;
+    border: 1px solid #ccc;
+    padding: 10px 0 10px 20px;
+    visibility: hidden;
+    top: 50px;
+    transition: 0.3s;
+}
+.sub-menu ul{
+    padding-left: 20px;
+}
+.sub-menu li a{
+    font-weight: normal;
+    font-size: 12px !important;
+}
+
+
+.others {
+    flex: 1;
+    
+}
+.others > li{
+    display: inline-block;
+    padding:  0 12px;
+}
+.others > li:first-child {
+    position: relative;
+}
+.others > li:first-child input{
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #333; 
+}
+.others > li:first-child i{
+    position: absolute;
+    right: 10px;
+}
