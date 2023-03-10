@@ -1,4 +1,4 @@
-/* display: flex đã giúp cho các thành phần được hiển thị linh hoạt hơn. */
+/* Phần Home Menu + banner slide */
 *{
     margin: 0;
     padding: 0;
@@ -21,7 +21,22 @@ header{
     padding: 12px 50px;
     height: 70px;
     align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.3);
+    font-weight: bold;
 }
+header.sticky{
+    background: rgba(255, 255, 255, 1);
+
+}
+header:hover{
+    background: rgba(255, 255, 255, 1);
+}
+
 
 .logo{
     flex: 1;
@@ -37,7 +52,7 @@ header{
 }
 .menu >li:hover .sub-menu{
     visibility: visible;
-    top: 30px;
+    top: 45px;
 }
 .menu > li a{
     font-size: 12px;
@@ -55,6 +70,8 @@ header{
     visibility: hidden;
     top: 50px;
     transition: 0.3s;
+    z-index: 1;
+    background: #fff;
 }
 .sub-menu ul{
     padding-left: 20px;
@@ -66,20 +83,38 @@ header{
 
 
 .others {
+    display: block;
+    display: flex;
     flex: 1;
     
 }
 .others > li{
-    display: inline-block;
     padding:  0 12px;
+    position: relative;
+}
+.others > li::after{
+    content: "";
+    display: block;
+    width: 1px;
+    height: 50%;
+    background: #dddddd;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
 }
 .others > li:first-child {
     position: relative;
+}
+.others > li:first-child::after{
+    display: none;
 }
 .others > li:first-child input{
     width: 100%;
     border: none;
     border-bottom: 1px solid #333; 
+    background: transparent;
+    outline: none;
 }
 .others > li:first-child i{
     position: absolute;
@@ -127,4 +162,83 @@ header{
 }
 .dot.active{
     background-color: #333;
+}
+
+/* Phần home contact */
+.app-container{
+    text-align: center;
+    align-items: center;
+    padding: 150px 0 50px 0;
+}
+.app-container p{
+    line-height: 20px;
+    letter-spacing: 1px;
+    font-size: 17px;
+    color: #000;
+    font-weight: bold;
+}
+.app-container input{
+    margin-top: 50px;
+    border: none;
+    border-bottom: 1px solid #000;
+    padding-bottom: 20px;
+    width: 400px;
+    text-align: center;
+    outline: none;
+}
+
+.app-steam{
+    margin: 50px;
+}
+.app-steam img{
+    height: 50px;
+    cursor: pointer;
+}
+
+/* footer*/
+footer{
+    text-align: center;
+}
+.footer-top{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    height: 70px;
+}
+.footer-top img{
+    height: 50px;
+}
+.footer-top li{
+    padding: 0 12px;
+    position: relative;
+}
+
+.footer-top li::after{
+    content: "";
+    display: block;
+    width: 1px;
+    height: 80%;
+    background: #ccc;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.footer-top li:last-child::after{
+    display: none;
+}
+.footer-top li:last-child a{
+    margin-right: 12px;
+    color: #333;
+}
+
+.footer-center{
+    text-align: center;
+}
+
+.footer-bottom{
+    margin: 20px 0;
+    text-align: center;
 }
