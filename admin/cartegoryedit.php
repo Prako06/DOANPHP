@@ -20,13 +20,16 @@ include "class/cartegory_class.php";
 
 <?php
 $cartegory = new cartegory;
-$cartegory_id = 123123123;
+
+$cartegory_id = $_GET['cartegory_id'];
+
 if (!isset($_GET['cartegory_id']) || $_GET['cartegory_id'] == null) {
     echo "php ngu vcl";
-    $cartegory_id = $_GET['cartegory_id'];
+    $cartegory_id = $result['cartegory_id'];
 
 } 
 $get_cartegory = $cartegory->get_cartegory($cartegory_id);
+
 
 if ($get_cartegory) {
     $result = $get_cartegory->fetch_assoc();

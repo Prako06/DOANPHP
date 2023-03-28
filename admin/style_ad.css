@@ -104,3 +104,28 @@ header{
 .slider-edit img {
     width: 150px;
 }
+
+/* ------------------------product-add-content----------- */
+.product-add-content input {
+    outline: none;
+    outline: none;
+    padding-left: 6px;
+    height: 30px;
+    margin-bottom: 20px;
+    width: 500px;
+}
+.product-add-content label {
+    display: block;
+}
+.product-add-content select{
+    outline: none;
+    padding-left: 6px;
+    height: 30px;
+    width: 500px;
+    margin-bottom: 20px;
+}
+.product-add-content textarea {
+    outline: none;
+    padding: 6px;
+    width: 500px;
+}
