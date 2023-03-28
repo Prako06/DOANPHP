@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/ea679957d2.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/style.css?v=<?php echo time(); ?">
+    <title>UNDERTALE</title>
+</head>
+
+<!---HEADER-->
+<body>
+    <section class="top">
+        <div class="container">
+            <div class="row">
+                <div class="logo">
+                    <img src="images/logo1.png" width=200 height=40;>
+                </div>
+                <div class="top-menu-item">
+                    <ul>
+                        <li>2D
+                            <ul class="top-menu-item">
+                                <li>
+                                    <a href="">New</a>
+                                </li>
+                                <li>
+                                    <a href="">Farm</a>
+                                </li>
+                                <li>
+                                    <a href="">Race</a>
+                                </li>
+                            </ul>
+                        <li>3D
+                            <ul class="top-menu-item">
+                                <li>
+                                    <a href="">123 </a>
+                                </li>
+                                <li>
+                                    <a href="">456 </a>
+                                </li>
+                                <li>
+                                    <a href="">789 </a>
+                                </li>
+                                <li>
+                                    <a href="">111 </a>
+                                </li>
+
+                            </ul>
+
+                        </li>
+                        <li><a href=""></a>VR</li>
+                        <li><a href=""></a>SALE</li>
+                        <li><a href=""></a>BOY</li>
+                        <li><a href=""></a>GIRL</li>
+                        <li><a href=""></a>MORE</li>
+                    </ul>
+                </div>
+                <div class="top-menu-icons">
+                    <ul>
+                        <li>
+                            <input type="text" placeholder="tìm kiếm">
+                            <i class="fas fa-search"></i>
+                        </li>
+                        <li>
+                            <i class="fas fa-user-secret"></i>
+                        </li>
+                        <li>
+                            <i class="fas fa-shopping-cart"></i>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    
+
+    <!-- -----------------------PAYMENT---------------------------------------------- -->
+    <section class="payment">
+        <div class="container">
+            <div class="payment-top-wrap">
+                 <div class="payment-top">
+                     <div class="delivery-top-delivery payment-top-item">
+                         <i class="fas fa-shopping-cart"></i>
+                     </div>
+                     <div class="delivery-top-adress payment-top-item">
+                         <i class="fas fa-map-marker-alt"></i>
+                     </div>
+                     <div class="delivery-top-payment payment-top-item">
+                         <i class="fas fa-money-check-alt"></i>
+                     </div>
+                 </div>
+            </div>
+         </div>
+         <div class="container">
+             <div class="payment-content row">
+                <div class="payment-content-left">
+                    <div class="payment-content-left-method-delivery">
+                        <p style="font-weight: bold;">Phương thức giao hàng</p> <br>
+                        <div class="payment-content-left-method-delivery-item">
+                            <input type="radio">
+                            <label for="">Giao hàng chuyển phát nhanh</label>
+                        </div>
+                    </div>
+                    <div class="payment-content-left-method-payment">
+                        <p style="font-weight: bold;">Phương thức thanh toán</p> <br>
+                        <p>Mọi giao dịch đều được bảo mật và mã hóa. Thông tin thẻ tín dụng sẽ không bao giờ được lưu lại.</p> <br>
+                        <div class="payment-content-left-method-payment-item">
+                            <input name="method-payment" type="radio">
+                            <label for="">Thanh toán bằng thẻ tín dụng(OnePay)</label>
+                        </div>
+                        <div class="payment-content-left-method-payment-item-img">
+                            <img src="images/visa.png" alt="">
+                        </div>
+                        <div class="payment-content-left-method-payment-item">
+                            <input name="method-payment" type="radio">
+                            <label for="">Thanh toán bằng thẻ ATM(OnePay)</label>
+                        </div>
+                        <div class="payment-content-left-method-payment-item-img">
+                            <img src="images/vcb.png" alt="">
+                        </div>
+                        <div class="payment-content-left-method-payment-item">
+                            <input name="method-payment" type="radio">
+                            <label for="">Thanh toán Momo</label>
+                        </div>
+                        <div class="payment-content-left-method-payment-item-img">
+                            <img src="images/momo.png" alt="">
+                        </div>
+                        <div class="payment-content-left-method-payment-item">
+                            <input checked name="method-payment" type="radio">
+                            <label for="">Thu tiền tận nơi</label>
+                        </div>
+                              
+                    </div>
+
+                </div>
+                <div class="payment-content-right">
+                    <div class="payment-content-right-button">
+                        <input type="text" placeholder="Mã giảm giá/Quà tặng">
+                        <button><i class="fas fa-check"></i></button>
+                    </div>
+                    <div class="payment-content-right-button">
+                        <input type="text" placeholder="Mã cộng tác viên">
+                        <button><i class="fas fa-check"></i></button>
+                    </div>
+                    <div class="payment-content-right-mnv">
+                        <select name="" id="">
+                            <option value="">Chọn mã nhân viên thân thiết</option>
+                            <option value="">D345</option>
+                            <option value="">C333</option>
+                            <option value="">T567</option>
+                            <option value="">D333</option>
+                        </select>
+                    </div>
+                </div>
+             </div>
+             <div class="payment-content-right-payment">
+                <button>HOÀN THÀNH</button>
+            </div>
+         </div>
+        
+    </section>
+
+
+    <!-- -------------------------Footer -->
+    <section class="footer">
+        <div class="footer-container">
+            <p>Tìm hiểu thêm nhiều game tại Steam</p>
+            <div class="app-steam">
+                <img src="images/steam.png">
+                <img src="images/game_ui.jpg">
+            </div>
+            <p>Nhận thêm nhiều ưu đãi về game</p>
+            <div class="input-email">
+                <input type="text" placeholder="Nhập email của bạn....">
+                <i class="fas fa-arrow-left"></i>
+            </div>
+            <div class="footer-items">
+                <li><a href=""><img src="images/dathongbao.png" alt=""></a></li>
+                <li><a href=""></a>Liên hệ</li>
+                <li><a href=""></a>Tuyển dụng</li>
+                <li><a href=""></a>Giới thiệu</li>
+                <li>
+                    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class='fa fa-youtube' target="_blank"></a>
+                    <a href="https://www.facebook.com/" class='fa fa-facebook' target="_blank"></a>
+                    <a href="https://www.twiiter.com" class='fa fa-twitter' target="_blank"></a>
+
+                </li>
+            </div>
+            <div class="footer-text">
+                Công ty Cổ phần Bán game với hai thành viên UNDERTALE <br>
+                Mã số kinh doanh 0123456789 <br>
+                Địa chỉ đăng ký: 10/80C XL Hà Nội, Phường Tân Phú, Thủ Đức, Thành phố Hồ Chí Minh <br>
+                Đặt hàng online : <b> 0121000113</b>
+            </div>
+            <div class="footer-bottom">
+                © Undertale All right reverse
+            </div>
+        </div>
+
+    </section>
