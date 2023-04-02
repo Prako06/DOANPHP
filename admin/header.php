@@ -6,9 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style_ad.css">
 
-    <title>Document</title>
+    <title>UNDERTALE SHOP</title>
 </head>
 <body>
     <header>
         <h1>TOP</h1>
+        <p>Một cái gì đó sẽ hiện ở đây</p>
     </header>

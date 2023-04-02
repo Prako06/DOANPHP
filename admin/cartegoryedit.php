@@ -13,7 +13,6 @@ include "class/cartegory_class.php";
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style_ad.css?v=<?php echo time(); ?>">
 
-
     <title>Document</title>
 </head>
 
@@ -24,7 +23,6 @@ $cartegory = new cartegory;
 $cartegory_id = $_GET['cartegory_id'];
 
 if (!isset($_GET['cartegory_id']) || $_GET['cartegory_id'] == null) {
-    echo "php ngu vcl";
     $cartegory_id = $result['cartegory_id'];
 
 } 
