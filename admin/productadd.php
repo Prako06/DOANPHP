@@ -18,9 +18,8 @@ include "class/cartegory_class.php";
 <?php
 $product = new product();
 if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['submit'])){
-    // var_dump($_POST);
 	$insert_product = $product ->insert_product($_POST,$_FILES);
-    //header('Location:brandlist.php');
+    
 
 }
 
