@@ -1,11 +1,6 @@
 <?php
 
-// // include_once '../config/config.php';
 include_once 'config.php';
-
-// //  require_once(__ROOT__.'/config/config.php');
-//  require_once(__ROOT__.'/config.php');
-
 
 ?>
 

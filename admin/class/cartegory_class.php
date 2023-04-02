@@ -41,11 +41,7 @@ class cartegory
     {
         $query = "UPDATE tbl_cartegory SET cartegory_name = '$cartegory_name' WHERE cartegory_id = '$cartegory_id'";
         $result = $this->db->update($query);
-       // header('Location:cartegorylist.php');
         return $result;
-
-
-
     }
 
 

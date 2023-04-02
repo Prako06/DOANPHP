@@ -3,7 +3,7 @@
     const imgContainer = document.querySelector('.aspect-ratio-169')
     const dotItem = document.querySelectorAll(".dot")
     let imgNumber = imgPosition.length
-    let index = 0
+    let index = 0  
 
     imgPosition.forEach(function (image, index) {
         image.style.left = index * 100 + "%"
@@ -13,7 +13,7 @@
     })
     function imgSlide() {
         index++;
-        console.log(index)
+        //console.log(index)
         if (index >= imgNumber) {
             index = 0
         }
