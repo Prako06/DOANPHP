@@ -21,7 +21,6 @@ $product = new product();
 if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['submit'])){
 	$insert_product = $product ->insert_product($_POST,$_FILES);
 
-
 }
 
 ?>
