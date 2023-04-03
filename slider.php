@@ -1,6 +1,6 @@
     <!-- -----------------------SLlDER---------------------------------------------- -->
-    <section class="sliders">
-            <div class="aspect-ratio-169 sliders-img">
+    <section class="slider">
+            <div class="aspect-ratio-169 slider-img">
                 <img src="images/DrawntoLife.jpg" alt="">
                 <img src="images/Railbound.jpg" alt="">
                 <img src="images/SkiesofChaos.jpg" alt="">
