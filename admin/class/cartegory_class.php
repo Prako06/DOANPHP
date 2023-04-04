@@ -44,6 +44,24 @@ class cartegory
         return $result;
     }
 
+    public function delete_cartegory($cartegory_id)
+    {
+        $query = "DELETE  FROM tbl_cartegory WHERE cartegory_id = '$cartegory_id'";
+        $result = $this->db->delete($query);
+        if ($result) {
+            $alert = "<span class = 'alert-style'> Delete Thành công</span> ";
+            return $alert;
+        } else {
+            $alert = "<span class = 'alert-style'> Delete Thất bại</span>";
+
+            $alert = "<span class = 'alert-style'> Delete Thất bại</span>";
+            return $alert;
+        }
+
+
+
+    }
+
 
 }
 ?>

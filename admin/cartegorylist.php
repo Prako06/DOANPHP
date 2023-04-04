@@ -25,6 +25,7 @@ $show_cartegory = $cartegory->show_cartegory()
 <div class="admin-content-right">
     <div class="table-content">
         <h1>Danh sách danh mục</h1>
+        <a href="cartegoryadd.php" class="button">Thêm mới</a>
         <table>
             <tr>
                 <th>Stt</th>
@@ -54,6 +55,7 @@ $show_cartegory = $cartegory->show_cartegory()
                             <a href="cartegorydelete.php?cartegory_id=<?php echo $result['cartegory_id'] ?>">Xóa</a>
                         </td>
                     </tr>
+
                     <?php
                 }
             }
