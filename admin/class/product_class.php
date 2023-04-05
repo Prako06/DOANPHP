@@ -123,68 +123,7 @@ class product
     }
 
 
-    public function show_order()
-    {
-        $query = "SELECT tbl_order.*, tbl_payment.*,tbl_diachi.*
-    FROM tbl_order INNER JOIN tbl_payment ON tbl_order.session_idA = tbl_payment.session_idA
-    INNER JOIN tbl_diachi ON tbl_order.customer_xa = tbl_diachi.ma_px
-    WHERE tbl_payment.statusA = 0
-    ORDER BY tbl_payment.payment_id DESC   ";
-        $result = $this->db->selectdc($query);
-        return $result;
-    }
-
-    public function show_order_detail($order_ma)
-    {
-        $query = "SELECT * FROM tbl_carta WHERE session_idA = '$order_ma' ORDER BY carta_id DESC";
-        $result = $this->db->select($query);
-        return $result;
-    }
-    public function show_order_done()
-    {
-        $query = "SELECT tbl_order.*, tbl_payment.*,tbl_diachi.*
-    FROM tbl_order INNER JOIN tbl_payment ON tbl_order.session_idA = tbl_payment.session_idA
-    INNER JOIN tbl_diachi ON tbl_order.customer_xa = tbl_diachi.ma_px
-    WHERE tbl_payment.statusA = 1
-    ORDER BY tbl_payment.payment_id DESC   ";
-        $result = $this->db->select($query);
-        return $result;
-    }
-    public function update_order($status, $session_idA)
-    {
-        $query = "UPDATE tbl_payment SET statusA = '$status' WHERE session_idA = '$session_idA'";
-        $result = $this->db->update($query);
-        // header('Location:orderlist.php');
-        return $result;
-
-    }
-    public function show_orderAll()
-    {
-        $query = "SELECT tbl_order.*, tbl_payment.*,tbl_diachi.*
-    FROM tbl_order INNER JOIN tbl_payment ON tbl_order.session_idA = tbl_payment.session_idA
-    INNER JOIN tbl_diachi ON tbl_order.customer_xa = tbl_diachi.ma_px
-    ORDER BY tbl_payment.payment_id DESC   ";
-        $result = $this->db->select($query);
-        return $result;
-    }
-    public function delete_payment($session_idA)
-    {
-        $query = "DELETE  FROM tbl_payment WHERE session_idA = '$session_idA'";
-        $result = $this->db->delete($query);
-        return $result;
-    }
-    public function delete_order($session_idA)
-    {
-        $query = "DELETE  FROM tbl_order WHERE session_idA = '$session_idA'";
-        $result = $this->db->delete($query);
-        return $result;
-    }
-    public function delete_cart($session_idA)
-    {
-        $query = "DELETE  FROM tbl_carta WHERE session_idA = '$session_idA'";
-        $result = $this->db->delete($query);
-        return $result;
-    }
+    
 }
 
 
